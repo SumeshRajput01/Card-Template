@@ -1,0 +1,84 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+:root{
+    --bg-clr: rgba(183, 185, 185, 0.6);
+    --txt-clr: rgb(19, 29, 29);
+}
+
+body{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* first service card design */
+
+.first-service-card{
+    max-width: 280px;
+    background: var(--bg-clr);
+    border: 2px solid rgb(46, 203, 255);
+    box-shadow: 4px 4px 10px rgb(27, 43, 48), -4px -4px 10px rgb(27, 43, 48);
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-end;
+}
+
+.first-service-card .card-image-div img{
+    max-width: 275px;
+}
+ 
+.first-service-card .service-text .service-name, 
+.first-service-card .service-text .service-desc{
+    color: var(--txt-clr);
+    font-family: 'Courier Prime';
+}
+
+.first-service-card .service-text .service-name{
+    font-size: 2rem;
+    padding: 8px 2px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+.first-service-card .service-text .service-desc{
+    font-size: 1.rem;
+    padding: 2px 5px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    text-align: left;
+}
+
+.first-service-card .service-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.first-service-card .service-btn .card-btn{
+    padding: 10px;
+    margin: 5px 0px;
+    font-size: 16px;
+    color: var(--txt-clr);
+    background: var(--bg-clr);
+    border: none;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    box-shadow: 1px 1px 3px rgb(46, 203, 255), -1px -1px 3px rgb(46, 203, 255);
+}
+
+.first-service-card .service-btn .card-btn:hover{
+    transform: translateY(-5px);
+    transition: 0.2s linear 0.1s;
+}
+
+
