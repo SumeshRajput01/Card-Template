@@ -14,10 +14,15 @@ a{
 }
 
 body{
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* designing the container of the card */
+.service-card-container{
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: center;
     height: 100vh;
 }
 
@@ -27,7 +32,7 @@ body{
     max-width: 280px;
     background: var(--bg-clr);
     border: 2px solid rgb(46, 203, 255);
-    box-shadow: 4px 4px 10px rgb(27, 43, 48), -4px -4px 10px rgb(27, 43, 48);
+    box-shadow: 4px 4px 10px rgb(46, 203, 255), -4px -4px 10px rgb(46, 203, 255)    ;
     display: flex;
     flex-direction: column;
     justify-items: flex-end;
@@ -81,4 +86,58 @@ body{
     transition: 0.2s linear 0.1s;
 }
 
+/* second service card */
+.second-service-card{
+    display: flex;
+    flex-direction: column;
+    max-width: 420px;
+    height: 200px;
+    border: 2px solid rgb(15, 181, 186);
+    box-shadow: 4px 4px 10px rgb(4, 115, 87), -4px -4px 10px rgb(4, 115, 87);
+    background: rgba(23, 106, 100, 0.5);
+}
+ 
+.second-service-card .card-img-text{
+    display: flex;
+}
 
+.second-service-card .card-img-text .card-text{
+    color: rgba(255, 255, 244, 0.9);
+    padding: 5px 5px;
+    font-family: sans-serif;
+}
+
+.second-service-card .card-img-text .card-text .service-name{
+    font-size: 1.8rem;
+    padding: 2px 1px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+.second-service-card .card-img-text .card-text .service-desc{
+    font-size: 0.9rem;
+    padding: 2px 5px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    text-align: justify;
+} 
+
+.second-service-card .second-service-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.second-service-card .second-service-btn .card-btn{
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px 0px;
+    border: none;
+    border: 1px solid rgb(19, 17, 17);
+}
+
+.second-service-card .second-service-btn:hover .card-btn{
+    transform: translateY(7px);
+    transition: 0.5s linear 0.2s;
+    box-shadow: 1px 1px 4px rgb(105, 188, 188), -1px -1px 4px rgb(105, 188, 188);
+}
