@@ -141,3 +141,61 @@ body{
     transition: 0.5s linear 0.2s;
     box-shadow: 1px 1px 4px rgb(105, 188, 188), -1px -1px 4px rgb(105, 188, 188);
 }
+
+/* third service card */
+
+.third-service-card{
+    max-width: 280px;
+    height: 380px;
+    border: 2px solid gainsboro;
+    background: url('https://images.unsplash.com/photo-1605732563938-8f8d4e7ad651?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGNvbnRhaW5lcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: -100px -0px; */
+    overflow: hidden;
+    box-shadow: 4px 4px 10px rgb(43, 106, 188), -4px -4px 10px rgb(43, 106, 188);
+    position: relative;
+}
+
+.third-service-card .card-content .card-text{
+    color: rgb(230, 225, 225);
+    padding: 10px 5px;
+    font-family: sans-serif;
+}
+
+.third-service-card .card-content .card-text .service-name{
+    font-size: 2rem;
+    padding: 3px 1px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+.third-service-card .card-content .card-text .service-desc{
+    font-size: 1.1rem;
+    padding: 2px 5px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    text-align: justify;
+} 
+
+.third-service-btn{
+    width: 100%;
+    position: absolute;
+    bottom: -60px;
+    display: flex;
+    justify-content: center;
+}
+
+.third-service-card:hover .third-service-btn{
+    transform: translateY(-90px);
+    transition: 0.5s linear 0.2s;
+}
+
+.third-service-btn .card-btn{
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px 0px;
+    border: none;
+    border: 1px solid rgb(13, 188, 188);
+    box-shadow: 2px 2px 4px rgb(43, 106, 188), -2px -2px 4px rgb(43, 106, 188);
+}
